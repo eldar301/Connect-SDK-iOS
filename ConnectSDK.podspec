@@ -38,6 +38,8 @@ Pod::Spec.new do |s|
   s.xcconfig = {
       "OTHER_LDFLAGS" => "$(inherited) -ObjC"
   }
+  
+  s.static_framework = true
 
   s.requires_arc = true
   s.libraries = "z", "icucore"
